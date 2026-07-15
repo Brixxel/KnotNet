@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0",
+  "model_architecture": {
+    "name": "KnotGraphNet_V5",
+    "img_size": 224,
+    "max_tokens": 40,
+    "num_fourier": 8,
+    "d_model": 64,
+    "num_heads": 2,
+    "num_layers": 2
+  },
+  "detection": {
+    "crossing_model": "YOLOv26x-pose (crossings)",
+    "endpoint_model": "YOLOv8s (endpoints)"
+  },
+  "files": {
+    "v5_weights": "weights/knotgraphnet_v5_best.pt",
+    "yolo_crossings": "weights/yolo_crossings_best.pt",
+    "yolo_endpoints": "weights/yolo_endpoints_best.pt"
+  }
+}
